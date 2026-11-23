@@ -1,0 +1,8 @@
+# Always use LF line endings (shell scripts, Makefiles and configs run on OpenWrt / Linux)
+* text=auto eol=lf
+
+# Binary files: never convert
+*.bin binary
+*.gz  binary
+*.png binary
+*.jpg binary
