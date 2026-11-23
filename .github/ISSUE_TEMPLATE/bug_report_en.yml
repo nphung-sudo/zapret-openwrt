@@ -11,7 +11,7 @@ body:
         Thanks for reporting a bug! Please fill out the form below.
         
         Before sending, please:
-        - Check [existing issues](https://github.com/remittor/zapret-openwrt/issues)
+        - Check [existing issues](https://github.com/nphung-sudo/zapret-openwrt/issues)
         - Read [documentation](https://github.com/remittor/zapret-openwrt/wiki/)
 
   - type: textarea

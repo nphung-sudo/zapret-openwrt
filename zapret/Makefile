@@ -198,7 +198,7 @@ if [ -z "$${IPKG_INSTROOT}" ]; then
 	fi
 	if $${PKG_CHECK} luci-app-zapret 2>/dev/null | grep -q . ; then
 		SVC_FILE=/www/luci-static/resources/view/zapret/service.js
-		if [ ! -f "$${SVC_FILE}" ] || ! grep -Fq "/remittor/zapret-openwrt" "$${SVC_FILE}"; then
+		if [ ! -f "$${SVC_FILE}" ] || ! grep -Eq "/(remittor|nphung-sudo)/zapret-openwrt" "$${SVC_FILE}"; then
 			echo "Please uninstall incompatible \"luci-app-zapret\" package!"
 			exit 55
 		fi
